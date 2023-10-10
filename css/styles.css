@@ -1,0 +1,34 @@
+#desktop-section {
+    display: none;
+}
+
+/* @media tells you what to do when screen looks like on smaller screen or specific width*/
+/* standards in the dev community 2023 */
+/* small screen */
+@media (min-width: 640px) {
+    #desktop-section {
+        display: block;
+    }
+    #mobile-section {
+        display: none;
+    }
+}
+
+/* medium screen */
+@media (min-width: 768px) {
+    h1 {
+        color: green;
+    }
+}
+/* large screen */
+@media (min-width: 1024px) {
+    
+}
+/* Extra large */
+@media (min-width: 1280px) {
+    
+}
+/* Extra extra large */
+@media (min-width: 1536px) {
+    
+}
