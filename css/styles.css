@@ -1,0 +1,97 @@
+/* Universal selector ( * ) */
+* {
+    color: red;
+    font-size: 28px;
+}
+
+/* Pseudo-classes selector */
+a:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+/* Tag selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    color: green;
+}
+
+/* ID selector */
+#header {
+    background-color: yellow;
+}
+
+/* Decendent selector */
+article p {
+    color: deeppink;
+}
+
+article h2 {
+    color: darkorange;
+}
+/* Child selector,(parent > child) matches an element that is a direct child of a specific element */
+ul > li {
+    list-style-type: square;
+}
+
+/* general sibling selector (option + ^) */
+h2 ~ p {
+    background-color: brown;
+}
+
+/* Sibling selector Selects element immediately after a specific element*/
+h2 + p {
+    background-color: aqua;
+}
+
+/* attribute selector */
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+    border-color: palegreen;
+}
+
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-color: rgb(127, 16, 230);
+    background-color: rgb(67, 154, 125);
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+/* Pseudo-class */
+ul li:first-child {
+    background-color: chocolate;
+}
+ul li:last-child {
+    background-color: chartreuse;
+}
+ul li:nth-child(2) {
+    background-color: cornflowerblue;
+}
+
+/* Pseudo-elements ::before and ::after*/
+p::before {
+    content: "🌶️";
+}
+
+p::after {
+    content: "🥛";
+}
+
+/* Grouping selector */
+
+h1, p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* combining selector */
+p.dummy::first-letter {
+    font-size: 80px;
+    initial-letter: 3 6;
+}
