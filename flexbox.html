@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Flexbox ::</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* display flex is default row */
+            /* all margin will be counted in flex */
+            display: flex; /* inline-flex if you want flex containers beside each other*/
+            border: 2px solid black;
+            background-color: darkgray;
+            height: 400px;
+            /* flex-direction: row-reverse; */
+
+            /* X-axis */
+            justify-content: flex-start;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* Y-axis */
+            /* align-items: center; */
+            align-items: flex-start;
+            /* align-items: flex-end; */
+            /* default is stretch, so flexbox will stretch over the page. So you need to define height */
+            /* align-items: stretch; */
+
+            flex-wrap: wrap;
+        }
+
+        .container-2 {
+            margin-top: 16px;
+            display: flex;
+            border: 2px solid black;
+            background-color: darkkhaki;
+            height: 400px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            border: 1px solid red;
+            background-color: blue;
+            width: 75px;
+            color: yellow;
+            margin: 10px;
+        }
+
+        .item-1 {
+            min-height: 50px;
+            flex-grow: 1;
+            flex-basis: 0;
+            flex: 1;
+        }
+
+        .item-2 {
+            min-height: 100px;
+            /* shrink 0 will make sure it keeps it size */
+            flex-shrink: 0;
+            flex: 4;
+            order: 2;
+        }
+
+        .item-3 {
+            min-height: 150px;
+            /* align-self: flex-end; */
+            margin-left: auto;
+            /* flex-grow: 2; */
+            /* flex-shrink: 0; */
+            /* flex-basis: 0; */
+            /* Grow Shrink and basis */
+            flex: 2 0 0;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">One</div>
+        <div class="item item-2">Two</div>
+        <div class="item item-3">Three</div>
+    </div>
+    <div class="container-2">
+        <div class="item item-1">One</div>
+        <div class="item item-2">Two</div>
+        <div class="item item-3">Three</div>
+    </div>
+</body>
+</html>

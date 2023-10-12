@@ -12,6 +12,10 @@
             margin: 0;
         }
 
+        body {
+            position: relative;
+        }
+
         i {
             color: white;
         }
@@ -26,11 +30,23 @@
         nav {
                 display: none;
                 background: black;
-                border-radius: 8px;
+                /* Position absolute is absolute to the position relative in the body */
+                position: absolute;
+                top: 65px;
+                width: 100%;
+                left: 0;
+                padding-left: 16px;
+                height: 20vh;
+                opacity: 90%;
             }
         
         nav li {
-            padding: 8px 0;
+            padding: 16px 0;
+        }
+
+        nav a:hover {
+            color: black;
+            background-color: white;
         }
 
         nav a {
@@ -52,7 +68,9 @@
 
         nav ul {
             list-style-type: none;
+            padding: 0;
         }
+
         /* Small (sm) */
         @media (min-width: 640px) {
             nav {
@@ -71,7 +89,16 @@
             nav ul li {
                 display: inline-block;
                 margin: 0 10px;
-        }
+            }
+            nav {
+                display: block;
+                position: static;
+                top: initial;
+                width: initial;
+                left: initial;
+                padding-left: 8px;
+                height: auto;
+            }
         /* Large (lg) */
         @media (min-width: 1024px) {
             /* Your styles for the large breakpoint here */

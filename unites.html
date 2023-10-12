@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Unites ::</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .some-parent {
+            width: 200px;
+            border: 1px solid black;
+            height: 500px;
+        }
+
+        .item {
+            background-color: green;
+        }
+ 
+        .item-percent {
+            /* % will take the percent of the container */
+            width: 50%;
+            height: 50%;
+        } 
+
+        .item-view-width {
+            /* vw and vh will take the percent of you screen/viewport */
+            width: 50vw;
+            height: 50vh;
+        } 
+
+        .p-rem {
+            /* rem is used only for fontsize, scales with screen while px don´t. Rem takes the root font size. */
+            /* 3rem means its 3 times the size of root font size */
+            font-size: 3rem; 
+        }
+
+        .parent {
+            font-size: 20px;
+        }
+
+        .p-em {
+            /* em takes the fontsize of the the parent */
+            /* 3em means its 3 times the size of parent font size */
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="some-parent">
+        <div class="item item-percent">Percent</div>
+        <div class="item item-view-width">Item View Width</div>
+    </div> -->
+
+    <div class="parent">
+        <div class="item p-rem">Rem</div>
+        <div class="item p-em">Em</div>
+    </div>
+</body>
+</html>

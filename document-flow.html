@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Flow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            
+        }
+        /* Display block takes whole row */
+        /* Div has display block by default. So you can add width and height */
+        /* If you add a small width, the dive takes the height of its content */
+        .div-1 {
+            background-color: red;
+        }
+
+        /* Span has display inline by default. So you CAN´T add width and height */
+        .span-1 {
+            background-color: green;
+            /* inline-block will allow span to add width and height */
+            display: inline-block;
+            width: 150px;
+        }
+
+        .span-2 {
+            background-color: blue;
+            width: 200px;
+        }
+
+        .div-2 {
+            background-color: yellow;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="div-1">I am a Div</div>
+    <span class="span-1">I am a Span</span>
+    <button class="btn-1">I am a Button</button>
+    <span class="span-2">I am your second span</span>
+    <div class="div-2">I am your second Div</div>
+
+</body>
+</html>
