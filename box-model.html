@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box model is describing how every element is looking on the webpage. How they relate to each other -->
+    <title>:: Box Model ::</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* box-sizing: content-box; content box is scaling. Its the default*/
+            /* border-box will keep your box to be the width and height you have specified */
+        }
+        .div-1 {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            color: white;
+                /* padding will add space around the content and will take the background with it. Will add to the div size. Now is 120px X 120px  */
+                /* padding: 25px 10px; Here first is top and bottom second is left and right */
+            padding: 25px 10px 25px 10px;
+                /* Margin is the content outside our borders, gives a distance between two elements */
+                /* This is how it is when you only add one px number
+                margin-top: 15px;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+                margin: Top Right Bottom LEFT
+                Moves clock starting with top
+                margin: 15px 15px 25px 15px */
+                /* The biggest margin between 2 elements will win, not add too  */
+            margin: 15px 15px 25px 15px; 
+            border: 10px solid yellow;  
+        }
+        .div-2 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1">One</div>
+    <div class="div-2">Two</div>
+</body>
+</html>

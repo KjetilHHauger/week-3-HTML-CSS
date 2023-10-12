@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Specificity ::</title>
+    <style>
+        /* If there is a higher 1 then it will take that */
+        /* Most important in order id,class,tag */
+        /* 0, 1, 0, 0 */
+        #header-id {
+            color: blue;
+        }
+        /* 0, 0 , 1, 0 */
+        .header {
+            color: green;
+        }
+
+        /* 0, 0, 0, 1 */
+        h2 {
+            color: red;
+        }
+
+        /* 0, 0, 1, 1 */
+        h2.header {
+            color: yellow;
+        }
+
+        h2.header span {
+            color: darkblue;
+        }
+
+        #header-id span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="header-id" class="header">
+        <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut laudantium non maxime ad sunt quo ullam tenetur veritatis repellendus!
+        </span>
+    </h2>
+
+    <p id="paragraph-id" class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti enim, itaque harum suscipit commodi fuga impedit quasi, molestiae deleniti accusamus dolor, libero aliquid facere recusandae. Fuga similique dolores esse. Voluptatum dolor aperiam, iure esse recusandae perferendis, beatae et accusamus debitis quasi pariatur iste culpa officiis impedit. Quos, velit quis.
+    </p>
+</body>
+</html>
