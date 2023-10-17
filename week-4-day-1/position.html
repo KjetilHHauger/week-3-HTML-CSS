@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Position ::</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        body {
+            height: 200vh;
+        }
+
+        .parent {
+            background-color: darkorange;
+            padding: .25rem;
+            position: relative;
+            height: 100%;
+            /* margin-top: 200px; */
+        }
+        
+        .child1 {
+            background-color: #AA1111;
+            padding: .25rem;
+            /* position relative allows to add 4 options */
+            /* relative breaks outside the document flow */
+            position: relative;
+                /* top: 16px; */
+                /* left: 30px; */
+                /* right: 30px;
+                bottom: 40px; */
+        }
+
+        .child2 {
+            background-color: #00AA88;
+            padding: .25rem;
+            /* absolute removes element from document flow */
+            /* position: absolute; */
+                /* Top will be the amount of pixels from the document container with nearest parent element with position relative. HTML tag is the automatic relative unless another parent has relative */
+                /* top: 30px; */
+                /* left: 50px; */
+        }
+
+        .child3 {
+            background-color: #7D889E;
+            padding: .25rem;
+            /* fixed puts element fixed in a position */
+            /* position: fixed; */
+            /* top: 0; */
+            /* left: 0; */
+            /* Sticky will not work is parent height is not 100% or too short */
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">One</div>
+        <div class="child2">Two</div>
+        <div class="child3">Three</div>
+
+    </div>
+</body>
+</html>

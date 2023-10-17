@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Position ::</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        body {
+            height: 200vh;
+        }
+
+        .parent {
+            background-color: darkorange;
+            padding: .25rem;
+            /* height: 100%; */
+            position: relative;
+            z-index: 5;
+            /* This parent has z-index of 0, if you have a parent of z-index 10. Then that parent will be in front of this parent and its children even if the children has a higher z-index. Stacking context */
+        }
+
+    
+        .child1 {
+            background-color: #AA1111;
+            padding: .25rem;
+            position: relative;
+            z-index: 50;
+        }
+
+        .child2 {
+            background-color: #00AA88;
+            padding: .25rem;
+            position: relative;
+            z-index: 40;
+            bottom: 30px;
+        }
+
+        .child3 {
+            background-color: #7D889E;
+            padding: .25rem;
+            z-index: 20;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .parent2 {
+            background-color: darkmagenta;
+            margin-top: 28px;
+            padding: .25rem;
+            z-index: 10;
+            bottom: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">One</div>
+        <div class="child2">Two</div>
+        <div class="child3">Three</div>
+    </div>
+
+    <div class="parent2">
+        Parent 2
+        <div class="child1">One</div>
+        <div class="child2">Two</div>
+        <div class="child3">Three</div>
+
+    </div>
+</body>
+</html>
