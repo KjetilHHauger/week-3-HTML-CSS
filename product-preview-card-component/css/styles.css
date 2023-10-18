@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F2EAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6C7289;
+    height: 800px;
+    width: 1440px;
+}
+
+img {
+    border-radius: 10px 0 0 10px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 450px;
+    border-radius: 0 10px 10px 0;
+}
+
+.left {
+    display: flex;
+}
+
+.header {
+    margin-top: 32px;
+    margin-left: 31.5px;
+}
+
+.first {
+    margin-right: 179.5px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+}
+
+.second {
+    margin-left: 0.5px; 
+    margin-top: 20px; 
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    width: 236px;
+    color: #1C232B;
+}
+
+.main {
+    margin-top: 24px;
+    margin-left: 31.5px;
+}
+
+.mainText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    width: 237px;
+    height: 92px;
+}
+
+.priceDiscount {
+    display: inline-block;
+    margin-top: 29px;
+    margin-left: 0.5px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: #3D8168;
+}
+
+.priceOld {
+    display: inline-block;
+    margin-left: 19px;
+    line-height: 23px;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-left: 32px;
+}
+
+button {
+    background-color: #3D8168;
+    color: #FFFFFF;
+    width: 236px;
+    height: 48px;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #1A4032;
+}
+
+.buttonText {
+    margin: 15px 0 16px 0;
+    display: inline-block;
+}
+
+.svg {
+    margin: 16px 11.69px 16px 0;
+}
