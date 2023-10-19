@@ -9,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #6C7289;
-    height: 800px;
-    width: 1440px;
+    height: 100vh;
 }
 
 img {
@@ -21,7 +20,7 @@ img {
     background-color: #FFFFFF;
     width: 600px;
     height: 450px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
 }
 
 .left {
@@ -77,6 +76,7 @@ img {
 
 .priceOld {
     display: inline-block;
+    margin-top: 34px;
     margin-left: 19px;
     line-height: 23px;
 }
@@ -107,3 +107,4 @@ button:hover {
 .svg {
     margin: 16px 11.69px 16px 0;
 }
+
