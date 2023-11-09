@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @keyframes  fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .traffic {
+            background-color: black;
+            width: 210px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .fade-in-box {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            animation-name: fadeIn; /* Refers to the keyframe name */
+            animation-duration: 1s; /* How long it will take to complete the animation */
+            animation-timing-function: ease-in-out; /* start slow then fast then end slow */
+            animation-iteration-count: infinite;
+
+            /* animation: fadeIn 1s ease-in-out infinite; short hand  */
+        }
+
+        .fade-in-box:hover {
+            animation-play-state: paused;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+            animation-duration: 6s;
+        }
+
+        .green {
+            background-color: green;
+            animation-duration: 9s;
+        }
+        
+    </Style>
+</head>
+<body>
+    <div class="traffic">
+        <div class="fade-in-box red"></div>
+        <div class="fade-in-box yellow"></div>
+        <div class="fade-in-box green"></div>
+    </div>
+    
+</body>
+</html>

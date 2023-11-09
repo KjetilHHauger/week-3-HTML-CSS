@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - loading</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+          body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(360deg);}
+            to {transform: rotate(0deg);}
+        }
+
+        .rotating-spinner {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* background-image: url();
+            background-repeat: none;
+            background-size: contain; */
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotating-spinner"></div>
+    
+</body>
+</html>
